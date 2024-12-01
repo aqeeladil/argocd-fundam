@@ -1,9 +1,13 @@
 ## Multi-Cluster Deployment with ArgoCD Using AWS-EKS (Hub-Spoke Architecture):
+<br>
 
 1. **Launch an EC2 Ubuntu Instance**
-        - Configure Security Group: Allow ports: SSH (22), HTTP (80), HTTPS (443), 8080 for ArgoCD, Custom TCP Rule (30000–32767) for NodePort services.
-        - IAM Role for EC2 with required permissions for EKS and ArgoCD.
+```bash
+# Configure Security Group: Allow ports: SSH (22), HTTP (80), HTTPS (443), 8080 for ArgoCD, Custom TCP Rule (30000–32767) for NodePort services.
 
+# IAM Role for EC2 with required permissions for EKS and ArgoCD.
+```
+    
 2. **SSH into your instance and update it**
 ```bash
 ssh -i your-key.pem ubuntu@your-ec2-public-ip

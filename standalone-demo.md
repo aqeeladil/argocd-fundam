@@ -1,8 +1,12 @@
 ## Deploying and Managing Kubernetes Applications with Argo CD on a Minikube Cluster using Aws-Ec2 Instance (Standalone Architecture):
+<br>
 
 1. **Launch an EC2 Ubuntu Instance**
-        - Instance Type: Use a t2.medium or larger (Minikube requires at least 2 CPUs and 2GB RAM).
-        - Configure Security Group: Allow ports: SSH (22), HTTP (80), HTTPS (443), 8080 for ArgoCD, Custom TCP Rule (30000–32767) for Minikube NodePort services.
+```bash
+# Instance Type: Use a t2.medium or larger (Minikube requires at least 2 CPUs and 2GB RAM).
+
+# Configure Security Group: Allow ports: SSH (22), HTTP (80), HTTPS (443), 8080 for ArgoCD, Custom TCP Rule (30000–32767) for Minikube NodePort services.
+```
 
 2. **SSH into your instance**
 ```bash
